@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap");
+
+:root {
+  --dark: #212a3e;
+  --dark-1: #394867;
+  --gray: #9ba4b5;
+  --light: #ebf2fa;
+  --red: #ff6d60;
+  --yellow: #f7d060;
+  --green: #98d8aa;
+  --blue: #19a7ce;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--light);
+
+  color: var(--dark);
+}
+
+header,
+section {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  height: 40px;
+  margin-top: 30px;
+
+  background-color: var(--dark);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  overflow: hidden;
+}
+
+#header-deco-wrp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
+}
+
+#header-deco-wrp .header-deco {
+  aspect-ratio: 4/3;
+  height: 100%;
+  margin: -4px;
+
+  transform: skew(-15deg);
+}
+
+#header-deco-wrp .header-deco:nth-child(1) {
+  background-color: var(--red);
+}
+
+#header-deco-wrp .header-deco:nth-child(2) {
+  background-color: var(--yellow);
+}
+
+#header-deco-wrp .header-deco:nth-child(3) {
+  background-color: var(--green);
+}
+
+section {
+  aspect-ratio: 3/4;
+  padding: 2.5rem;
+
+  background-color: white;
+}
+
+h1 {
+  margin-bottom: 2.5rem;
+
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.cntr-txt {
+  text-align: center;
+}
